@@ -1,0 +1,139 @@
+{
+  "shifts": [
+    {
+      "id": "s1",
+      "date": "2026-08-10",
+      "startTime": "06:00",
+      "endTime": "14:00",
+      "role": "Front Desk",
+      "location": "Main Office",
+      "employeeId": "e1",
+      "employeeName": "Maria Santos",
+      "status": "filled",
+      "swappable": true
+    },
+    {
+      "id": "s2",
+      "date": "2026-08-10",
+      "startTime": "14:00",
+      "endTime": "22:00",
+      "role": "Front Desk",
+      "location": "Main Office",
+      "employeeId": null,
+      "employeeName": null,
+      "status": "open",
+      "swappable": false
+    },
+    {
+      "id": "s3",
+      "date": "2026-08-10",
+      "startTime": "22:00",
+      "endTime": "06:00",
+      "role": "Security",
+      "location": "Main Office",
+      "employeeId": "e2",
+      "employeeName": "Jose Reyes",
+      "status": "filled",
+      "swappable": true
+    },
+    {
+      "id": "s4",
+      "date": "2026-08-11",
+      "startTime": "06:00",
+      "endTime": "14:00",
+      "role": "Front Desk",
+      "location": "Branch A",
+      "employeeId": "e3",
+      "employeeName": "Ana Cruz",
+      "status": "filled",
+      "swappable": true
+    },
+    {
+      "id": "s5",
+      "date": "2026-08-11",
+      "startTime": "14:00",
+      "endTime": "22:00",
+      "role": "Supervisor",
+      "location": "Branch A",
+      "employeeId": null,
+      "employeeName": null,
+      "status": "open",
+      "swappable": false
+    }
+  ],
+  "employees": [
+    {
+      "id": "e1",
+      "name": "Maria Santos",
+      "role": "Front Desk",
+      "timezone": "Asia/Manila",
+      "department": "Operations"
+    },
+    {
+      "id": "e2",
+      "name": "Jose Reyes",
+      "role": "Security",
+      "timezone": "Asia/Manila",
+      "department": "Operations"
+    },
+    {
+      "id": "e3",
+      "name": "Ana Cruz",
+      "role": "Front Desk",
+      "timezone": "Asia/Manila",
+      "department": "Operations"
+    },
+    {
+      "id": "e4",
+      "name": "Carlos Mendoza",
+      "role": "Supervisor",
+      "timezone": "America/Chicago",
+      "department": "Operations"
+    },
+    {
+      "id": "e5",
+      "name": "Elena Garcia",
+      "role": "Front Desk",
+      "timezone": "Europe/London",
+      "department": "Operations"
+    }
+  ],
+  "availability": [
+    {
+      "id": "a1",
+      "employeeId": "e1",
+      "week": "2026-W33",
+      "availableDays": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "timezone": "Asia/Manila"
+    },
+    {
+      "id": "a2",
+      "employeeId": "e2",
+      "week": "2026-W33",
+      "availableDays": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "timezone": "Asia/Manila"
+    },
+    {
+      "id": "a3",
+      "employeeId": "e3",
+      "week": "2026-W33",
+      "availableDays": ["Mon", "Wed", "Fri"],
+      "timezone": "Asia/Manila"
+    },
+    {
+      "id": "a4",
+      "employeeId": "e4",
+      "week": "2026-W33",
+      "availableDays": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+      "timezone": "America/Chicago"
+    },
+    {
+      "id": "a5",
+      "employeeId": "e5",
+      "week": "2026-W33",
+      "availableDays": ["Tue", "Wed", "Thu"],
+      "timezone": "Europe/London"
+    }
+  ],
+  "swapRequests": []
+}

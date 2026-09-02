@@ -1,0 +1,8 @@
+node_modules/
+vendor/
+android/.gradle/
+android/app/.cxx/
+android/app/build/
+android/build/
+ios/Pods/
+ios/build/

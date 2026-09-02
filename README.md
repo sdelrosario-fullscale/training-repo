@@ -15,6 +15,17 @@ A React Native baseline with strict TypeScript, Zustand for local state, TanStac
 npm ci
 ```
 
+Start the workforce mock API in a separate terminal:
+
+```sh
+npm run api
+curl http://localhost:3001/shifts
+```
+
+The configured routes also expose the supplied `swapRequests` collection at `/swap-requests`.
+
+The default API URL is `http://localhost:3001` for iOS and `http://10.0.2.2:3001` for the Android emulator. Use `createApiClient` with another base URL when testing on a physical device.
+
 For iOS, install the native dependencies once after cloning and whenever they change:
 
 ```sh
@@ -49,11 +60,13 @@ The validation command runs strict type checking, ESLint, Prettier verification,
 
 ```text
 src/
-├── api/        TanStack Query hooks and request functions
+├── api/        Typed API client, workforce models, and request functions
 ├── providers/  Application-wide providers
 ├── screens/    Screen components
 └── store/      Zustand stores
 ```
+
+See [TypeScript Migration Strategy](ts-migration-strategy.md) for the incremental approach to adopting strict typing in an existing JavaScript codebase.
 
 ## Contribution workflow
 

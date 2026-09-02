@@ -1,0 +1,4 @@
+{
+  "/swap-requests": "/swapRequests",
+  "/swap-requests/*": "/swapRequests/$1"
+}
